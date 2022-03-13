@@ -14,7 +14,6 @@ import com.veezean.idea.plugin.codereviewer.common.InnerProjectCache;
 import com.veezean.idea.plugin.codereviewer.common.ProjectInstanceManager;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.*;
 import java.util.Collection;
 
 /**
@@ -25,7 +24,7 @@ import java.util.Collection;
  */
 public class LeftMarkIconProvider extends RelatedItemLineMarkerProvider {
     @Override
-    protected void collectNavigationMarkers(@NotNull PsiElement element, @NotNull Collection<? super RelatedItemLineMarkerInfo> result) {
+    protected void collectNavigationMarkers(@NotNull PsiElement element, @NotNull Collection<? super RelatedItemLineMarkerInfo<?>> result) {
 
         if (!(element instanceof PsiWhiteSpace)) {
             super.collectNavigationMarkers(element, result);
