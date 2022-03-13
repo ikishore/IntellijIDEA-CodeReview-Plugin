@@ -289,9 +289,9 @@
             </constraints>
             <properties>
               <model>
-                <item value="问题"/>
-                <item value="建议"/>
-                <item value="疑问"/>
+                <item value="Question"/>
+                <item value="Suggestion"/>
+                <item value="Query"/>
               </model>
             </properties>
           </component>
@@ -309,9 +309,9 @@
             </constraints>
             <properties>
               <model>
-                <item value="提示"/>
-                <item value="一般"/>
-                <item value="严重"/>
+                <item value="Suggestion"/>
+                <item value="General"/>
+                <item value="Major"/>
               </model>
             </properties>
           </component>
@@ -329,10 +329,10 @@
             </constraints>
             <properties>
               <model>
-                <item value="编码基础类"/>
-                <item value="业务功能类"/>
-                <item value="安全可靠类"/>
-                <item value="其它"/>
+                <item value="Coding guidelines"/>
+                <item value="Functionality"/>
+                <item value="Safety and Reliability"/>
+                <item value="Other"/>
               </model>
             </properties>
           </component>
@@ -399,10 +399,10 @@
             </constraints>
             <properties>
               <model>
-                <item value="未确认"/>
-                <item value="已修改"/>
-                <item value="待修改"/>
-                <item value="拒绝"/>
+                <item value="Unconfirmed"/>
+                <item value="Modified"/>
+                <item value="To be modified"/>
+                <item value="Rejected"/>
               </model>
             </properties>
           </component>

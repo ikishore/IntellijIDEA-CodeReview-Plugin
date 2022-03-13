@@ -113,30 +113,30 @@ public class ManageReviewCommentUI {
 
         // 设置指定列只能通过下拉框选择数据
         JComboBox<String> typeComboBox = new ComboBox<>();
-        typeComboBox.addItem("问题");
-        typeComboBox.addItem("建议");
-        typeComboBox.addItem("疑问");
+        typeComboBox.addItem("Question");
+        typeComboBox.addItem("Suggestion");
+        typeComboBox.addItem("Query");
         commentTable.getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(typeComboBox));
 
         JComboBox<String> severityComboBox = new ComboBox<>();
-        severityComboBox.addItem("提示");
-        severityComboBox.addItem("一般");
-        severityComboBox.addItem("严重");
+        severityComboBox.addItem("Suggestion");
+        severityComboBox.addItem("General");
+        severityComboBox.addItem("Major");
         commentTable.getColumnModel().getColumn(4).setCellEditor(new DefaultCellEditor(severityComboBox));
 
         JComboBox<String> factorComboBox = new ComboBox<>();
-        factorComboBox.addItem("编码基础类");
-        factorComboBox.addItem("业务功能类");
-        factorComboBox.addItem("安全可靠类");
-        factorComboBox.addItem("其它");
+        factorComboBox.addItem("Coding guidelines");
+        factorComboBox.addItem("Functionality");
+        factorComboBox.addItem("Safety and Reliability");
+        factorComboBox.addItem("Other");
         commentTable.getColumnModel().getColumn(5).setCellEditor(new DefaultCellEditor(factorComboBox));
 
         // 确认结果
         JComboBox<String> confirmResultComboBox = new ComboBox<>();
-        confirmResultComboBox.addItem("未确认");
-        confirmResultComboBox.addItem("已修改");
-        confirmResultComboBox.addItem("待修改");
-        confirmResultComboBox.addItem("拒绝");
+        confirmResultComboBox.addItem("Unconfirmed");
+        confirmResultComboBox.addItem("Modified");
+        confirmResultComboBox.addItem("To be modified");
+        confirmResultComboBox.addItem("Rejected");
         commentTable.getColumnModel().getColumn(13).setCellEditor(new DefaultCellEditor(confirmResultComboBox));
 
         // 按住alt单击，弹出详情确认框
